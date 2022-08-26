@@ -36,7 +36,7 @@ USE XPATH LOCATOR FOR ALL WEBELEMENT LOCATORS
        }else{
            System.out.println("FAILED");
        }
-       driver.close();
+       //driver.close();
 
 
 
