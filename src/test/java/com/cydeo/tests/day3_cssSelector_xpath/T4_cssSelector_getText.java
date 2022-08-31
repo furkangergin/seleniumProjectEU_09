@@ -3,7 +3,7 @@ package com.cydeo.tests.day3_cssSelector_xpath;
 import com.cydeo.tests.utilities.*;
 import org.openqa.selenium.*;
 
-public class T4_cssSelector_getText {
+public class   T4_cssSelector_getText {
 
     public static void main(String[] args) {
         //TC #4: NextBaseCRM, locators, getText(), getAttribute() practice

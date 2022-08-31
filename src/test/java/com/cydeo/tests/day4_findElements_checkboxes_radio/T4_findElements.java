@@ -15,15 +15,17 @@ public class T4_findElements {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
 
+
         //Providing extra wait time for our driver before it throws NoSuchElementException
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         //2- Go to: https://practice.cydeo.com/abtest
         driver.get("https://practice.cydeo.com/abtest");
+        System.out.println("driver.getTitle() = " + driver.getTitle());
 
         //3- Locate all the links in the page.
         //windows : alt+enter --> press enter again
-        //mac     : option + Enter --> press enter again
+        //mac     : option + Enter --> press enter again                                              vc
         List <WebElement> allLinks =  driver.findElements(By.tagName("a"));
 
         //4- Print out the number of the links on the page.
