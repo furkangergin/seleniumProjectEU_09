@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,18 +33,30 @@ public class T8 {
     @Test
     public void dropDown8 (){
 
-        Select option = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
+        Select option = new Select(driver.findElement(By.xpath("//select[@name='Languages']")));
 
+       // System.out.println("option.isMultiple() = " + option.isMultiple());
 
+        option.selectByIndex(0);
+        option.selectByIndex(1);
+        option.selectByIndex(2);
+        option.selectByIndex(3);
+        option.selectByIndex(4);
+        option.selectByIndex(5);
 
-        List<WebElement> allOptions = option.getOptions();
+        List<WebElement> allSelected =option.getAllSelectedOptions();
 
-        for (WebElement each : allOptions) {
-
-            System.out.println(each.getText());
-
+        for (WebElement webElement : allSelected) {
+            System.out.println(webElement.getText());
         }
 
+        option.deselectAll();
 
+
+    }
+    @AfterMethod
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(5000);
+        driver.close();
     }
 }
