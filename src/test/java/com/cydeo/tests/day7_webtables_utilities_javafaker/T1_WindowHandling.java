@@ -31,6 +31,7 @@ public class T1_WindowHandling {
         //4. Create a logic to switch to the tab where Etsy.com is open
 
         BrowserUtils.switchWindowAndVerify(driver, "etsy", "Etsy");
-    }
+
+           }
 }
 
