@@ -71,9 +71,10 @@ public class T5_Windows_Practice {
 
     }
 
-    @AfterMethod
+ /*   @AfterMethod
     public void tearDown(){
         driver.quit();
     }
+*/
 }
 
