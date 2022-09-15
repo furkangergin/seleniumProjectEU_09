@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import javax.sql.rowset.BaseRowSet;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
+public abstract class TestBase {
 
     public WebDriver driver;
 
@@ -23,7 +23,6 @@ public class TestBase {
     }
     @AfterMethod
     public void tearDownMethod(){
-        BrowserUtils.sleep(3);
-        driver.quit();
+        driver.close();
     }
 }
