@@ -1,6 +1,5 @@
 package com.cydeo.tests.day1_selenium_intro;
 
-import com.cydeo.tests.utilities.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,7 +1,7 @@
 package com.cydeo.tests.day7_webtables_utilities_javafaker;
 
-import com.cydeo.base.TestBase;
-import com.cydeo.tests.utilities.BrowserUtils;
+import com.cydeo.tests.base.TestBase;
+import com.cydeo.utilities.BrowserUtils;
 import org.testng.annotations.Test;
 
 public class Inheritance extends TestBase {

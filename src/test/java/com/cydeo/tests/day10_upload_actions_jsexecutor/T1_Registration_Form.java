@@ -1,6 +1,6 @@
 package com.cydeo.tests.day10_upload_actions_jsexecutor;
 
-import com.cydeo.tests.utilities.*;
+import com.cydeo.utilities.*;
 import com.github.javafaker.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
