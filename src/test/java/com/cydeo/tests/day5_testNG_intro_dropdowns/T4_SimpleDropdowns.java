@@ -1,6 +1,6 @@
 package com.cydeo.tests.day5_testNG_intro_dropdowns;
 
-import com.cydeo.utilities.*;
+import com.cydeo.tests.utilities.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import org.testng.*;

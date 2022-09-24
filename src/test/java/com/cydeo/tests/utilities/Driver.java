@@ -1,4 +1,4 @@
-package com.cydeo.utilities;
+package com.cydeo.tests.utilities;
 
 import io.github.bonigarcia.wdm.*;
 import org.openqa.selenium.*;

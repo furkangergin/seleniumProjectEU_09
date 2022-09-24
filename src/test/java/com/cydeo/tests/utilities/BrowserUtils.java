@@ -1,4 +1,4 @@
-package com.cydeo.utilities;
+package com.cydeo.tests.utilities;
 
 /*
 In this class only general utility methods that are NOT related to some specific page.
@@ -55,7 +55,7 @@ public class BrowserUtils {
     /*
     This method accepts a String "expectedTitle" and Asserts if it is true
      */
-    public static void verifyTitle(WebDriver driver ,String expectedTitle){
+    public static void  verifyTitle(WebDriver driver ,String expectedTitle){
 
         Assert.assertEquals(driver.getTitle(), expectedTitle);
 

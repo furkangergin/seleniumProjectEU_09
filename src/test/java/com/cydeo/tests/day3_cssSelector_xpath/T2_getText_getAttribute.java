@@ -1,6 +1,6 @@
 package com.cydeo.tests.day3_cssSelector_xpath;
 
-import com.cydeo.utilities.*;
+import com.cydeo.tests.utilities.*;
 
 import org.openqa.selenium.*;
 
